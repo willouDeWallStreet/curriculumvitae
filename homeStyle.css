@@ -1,0 +1,8 @@
+div.dev_skills{
+    overflow: auto;
+    white-space: nowrap;
+}
+
+div.scrollmenu li {
+    display: inline-block;
+}
