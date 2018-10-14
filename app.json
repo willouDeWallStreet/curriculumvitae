@@ -1,0 +1,7 @@
+{
+    "name": "My CurriculumVitae",
+    "description": "The web is a new nice way to show up his CV",
+    "repository": "https://github.com/willouDeWallStreet/curriculumvitae",
+    "keywords": ["node", "express", "heroku"]
+  }
+  

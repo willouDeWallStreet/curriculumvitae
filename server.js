@@ -1,13 +1,10 @@
-var express = require('express');
-var app = express();
+const express = require('express')
+const path = require('path')
+const PORT = process.env.PORT || 5000
 
-app.get('/', function (req, res) {
-	   res.sendFile( __dirname + "/" + "home.html" );
-})
-
-var server = app.listen(8081, function () {
-	   var host = server.address().address
-	   var port = server.address().port
-	   
-	   console.log("Example app listening at http://%s:%s", host, port)
-})
+express()
+  .use(express.static(path.join(__dirname, 'public')))
+  .set('views', path.join(__dirname, 'views'))
+  .set('view engine', 'ejs')
+  .get('/', (req, res) => res.render('pages/home'))
+  .listen(PORT, () => console.log(`Listening on ${ PORT }`))
