@@ -2,9 +2,10 @@
 <html lang="fr">
 <head>
     <% include ../partials/header.ejs %>
-    <!-- Style perso -->
+    <!-- personal style -->
     <link rel="stylesheet" href="/stylesheets/homeStyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 </head>
 <body class="bg-dark">
     <div class="text-center">
@@ -64,39 +65,50 @@
         </div>
     </div>
     <!-- Footer -->
-    <footer class="page-footer font-small special-color-dark pt-4">
-        <div class="container">    
-          <!-- Social buttons -->
+    <footer class="page-footer font-small">
+        <div class="container">
+          <!-- Social links -->
           <ul class="list-unstyled list-inline text-center">
             <li class="list-inline-item">
-              <a class="btn-floating btn-fb mx-1">
-                <i class="fa fa-github"> </i>
+              <a class="btn-floating btn-fb mx-1" href="https://github.com/willouDeWallStreet">
+                <i class="fab fa-github"> </i>
               </a>
             </li>
             <li class="list-inline-item">
               <a class="btn-floating btn-tw mx-1">
-                <i class="fa fa-twitter"> </i>
+                <i onclick="copyToClipboard('.tooltiptext')" data-toggle="tooltip" title="Click to copy my Skype email" class="fab fa-skype"> </i>
+                <span class="tooltiptext">william.evrard44@gmail.com</span>
               </a>
             </li>
-            <li class="list-inline-item">
-              <a class="btn-floating btn-gplus mx-1">
-                <i class="fa fa-google-plus"> </i>
+            <li class="items_footer list-inline-item">
+              <a class="btn-floating btn-li mx-1" href="https://slack.com">
+                <i class="fab fa-slack"> </i>
               </a>
             </li>
-            <li class="list-inline-item">
-              <a class="btn-floating btn-li mx-1">
-                <i class="fa fa-linkedin"> </i>
+            <li class="items_footer list-inline-item">
+              <a class="btn-floating btn-li mx-1" href="https://www.linkedin.com/in/william-evrard-7b07a0150">
+                <i class="fab fa-linkedin"> </i>
               </a>
             </li>
           </ul>
-          <!-- Social buttons -->    
-        </div> 
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2018 Copyright:
-          <a href="https://mdbootstrap.com/bootstrap-tutorial/"> MDBootstrap.com</a>
-        </div>
-        <!-- Copyright -->    
+          <ul class="list-unstyled list-inline text-center">
+            <li class="list-inline-item">
+                <i class="fa fa-phone mr-2"></i>+33 6 80 62 20 24</p>
+            </li>
+            <li class="list-inline-item">
+                <a class="mx-1">
+                    <i class="mr-4"></i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <i class="far fa-envelope mr-2"></i>william.evrard@hei.yncrea.fr
+            </li>
+          </ul>
+          <!-- Social links -->    
+        </div>  
       </footer>
+
+      
       <!-- Footer -->
 </body>
 </html>
