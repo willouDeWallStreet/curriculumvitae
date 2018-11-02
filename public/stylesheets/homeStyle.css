@@ -1,15 +1,10 @@
-div.dev_skills{
-    overflow: auto;
-    white-space: nowrap;
-}
-
-div.scrollmenu li {
-    display: inline-block;
-}
-
 body {
-    height: 100%;
     color: white;
+}
+
+.aa{
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
 h2{
@@ -17,6 +12,52 @@ h2{
     letter-spacing: 5px;
 }
 
+/* **************** */
+/* SKILLS */
+/* **************** */
+
+#list-DevSkills, #list-ProjectSkills, #list-Experience, #list-Hobbies{
+    color: white;
+}
+#list-tab{
+    border-color: white;
+}
+#list-DevSkills-list, #list-ProjectSkills-list, #list-Experience-list, #list-Hobbies-list{
+    background-color: black;
+    color: white;
+}
+a.active{
+    background-color: white;
+    border-color: white;
+}
+.navBar{
+    margin-top: 4%;
+}
+li{
+    margin-top: 1%;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.projectSkillText{
+    text-align: justify;
+}
+.experienceText{
+    font: Arial, sans-serif;
+    font-size: 14px;
+}
+.experienceTitle{
+    color: #001f3f;
+    font-weight: bold;
+    font-size: 1.2em
+}
+
+
+/* **************** */
+/* FOOTER */
+/* **************** */
 footer{
     margin-top: 10%;
     background-color: #222222;
