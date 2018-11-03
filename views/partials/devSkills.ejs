@@ -1,0 +1,169 @@
+<div class="block">
+    <h4>DevSkills</h4>
+    <div class="row">
+        <div class="col-4 navBar">
+            <div class="list-group" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action active" id="list-FrontEnd-list" data-toggle="list" href="#list-FrontEnd" role="tab" aria-controls="FrontEnd">FrontEnd</a>
+                <br>
+                <a class="list-group-item list-group-item-action" id="list-BackEnd-list" data-toggle="list" href="#list-BackEnd" role="tab" aria-controls="BackEnd">BackEnd</a>
+                <br>
+                <a class="list-group-item list-group-item-action" id="list-Mobile-list" data-toggle="list" href="#list-Mobile" role="tab" aria-controls="Mobile">Mobile</a>
+            </div>
+        </div>
+        <div class="col-8">
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="list-FrontEnd" role="tabpanel" aria-labelledby="list-FrontEnd-list">
+                    <div style="margin-top: 2%;">
+                        <div class="row">
+                            <canvas id="bar-chart-frontend" width="16" height="4"></canvas>
+                            <!--
+                            <h5><span class="badge badge-success badge-pill">HTML5 & CSS3</span></h5>
+                            <h5><span class="badge badge-warning badge-pill">Bootstrap</span></h5>
+                            <h5><span class="badge badge-danger badge-pill">Angular</span></h5>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="list-BackEnd" role="tabpanel" aria-labelledby="list-BackEnd-list">
+                    <div style="margin-top: 2%;">
+                        <div class="row">
+                            <canvas id="bar-chart-backend" width="16" height="4"></canvas>
+                            <!--
+                            <h5><span class="badge badge-success badge-pill">Java (J2E)</span></h5>
+                            <h5><span class="badge badge-warning badge-pill">NodeJS</span></h5>
+                            <h5><span class="badge badge-success badge-pill">SQL</span></h5>
+                            <h5><span class="badge badge-warning badge-pill">MongoDB</span></h5>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="list-Mobile" role="tabpanel" aria-labelledby="list-Mobile-list">
+                    <div style="margin-top: 2%;">
+                        <div class="row">
+                            <canvas id="bar-chart-mobile" width="16" height="4"></canvas>
+                            <!--
+                            <h5><span class="badge badge-warning badge-pill">Android (Java)</span></h5>
+                            <h5><span class="badge badge-warning badge-pill">Flutter</span></h5>
+                            <h5><span class="badge badge-danger badge-pill">Ionic</span></h5>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Bar chart - Front End
+    new Chart(document.getElementById("bar-chart-frontend"), {
+        type: 'bar',
+        data: {
+            labels: ["HTML5 & CSS3", "Bootstrap", "Angular"],
+            datasets: [
+                {
+                    label: "Number of projects with this techno",
+                    backgroundColor: ["rgba(92, 184, 92, 0.6)", "rgba(255, 187,51 ,0.6)","#d9534f"],
+                    data: [6,4,2]
+                }
+            ]
+        },
+        options: {
+            scales: {
+                yAxes: [
+                    {
+                    ticks: {
+                        beginAtZero: true
+                    }
+                    }
+                ],
+                xAxes: [
+                    {
+                        barPercentage: 0.4,
+                    }
+                ]
+            },
+            legend: { display: false },
+            title: {
+                display: true,
+                text: 'FrontEnd Technologies'
+            },
+            labels: {
+                fontColor: '#111'
+            }
+        }
+    });
+    // Bar chart - Back End
+    new Chart(document.getElementById("bar-chart-backend"), {
+        type: 'bar',
+        data: {
+            labels: ["Java (J2E)", "NodeJS", "SQL", "MongoDB"],
+            datasets: [
+                {
+                    label: "Number of projects with this techno",
+                    backgroundColor: ["rgba(92, 184, 92, 0.6)", "rgba(255, 187,51 ,0.6)","rgba(92, 184, 92, 0.6)", "rgba(255, 187,51 ,0.6)"],
+                    data: [4,2,4,1]
+                }
+            ]
+        },
+        options: {
+            scales: {
+                yAxes: [
+                    {
+                    ticks: {
+                        beginAtZero: true
+                    }
+                    }
+                ],
+                xAxes: [
+                    {
+                        barPercentage: 0.4,
+                    }
+                ]
+            },
+            legend: { display: false },
+            title: {
+                display: true,
+                text: 'BackEnd Technologies'
+            },
+            labels: {
+                fontColor: '#111'
+            }
+        }
+    });
+    // Bar chart - Front End
+    new Chart(document.getElementById("bar-chart-mobile"), {
+        type: 'bar',
+        data: {
+            labels: ["Android (Java)", "Flutter", "Ionic"],
+            datasets: [
+                {
+                    label: "Number of projects with this techno",
+                    backgroundColor: ["rgba(255, 187,51 ,0.6)", "rgba(255, 187,51 ,0.6)","#d9534f"],
+                    data: [2,2,1]
+                }
+            ]
+        },
+        options: {
+            scales: {
+                yAxes: [
+                    {
+                    ticks: {
+                        beginAtZero: true
+                    }
+                    }
+                ],
+                xAxes: [
+                    {
+                        barPercentage: 0.4,
+                    }
+                ]
+            },
+            legend: { display: false },
+            title: {
+                display: true,
+                text: 'Mobile Technologies'
+            },
+            labels: {
+                fontColor: '#111'
+            }
+        }
+    });
+</script>
