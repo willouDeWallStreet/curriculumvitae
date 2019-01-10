@@ -2,9 +2,13 @@ body {
     color: white;
 }
 
-.aa{
+.mainBlock{
     margin-left: 3%;
     margin-right: 3%;
+}
+
+.block{
+    margin-top: 4%;
 }
 
 h2{
@@ -16,28 +20,39 @@ h2{
 /* SKILLS */
 /* **************** */
 
-#list-DevSkills, #list-ProjectSkills, #list-Experience, #list-Hobbies{
+#list-FrontEnd, #list-BackEnd, #list-Mobile, #list-GitHub, #list-JiraConfluence,
+#list-Trello, #list-SlackStride, #list-Internship, #list-Projects{
     color: white;
 }
 #list-tab{
     border-color: white;
 }
-#list-DevSkills-list, #list-ProjectSkills-list, #list-Experience-list, #list-Hobbies-list{
+#list-FrontEnd-list, #list-BackEnd-list, #list-Mobile-list, #list-GitHub-list, 
+#list-JiraConfluence-list, #list-Trello-list, #list-SlackStride-list,
+#list-Internship-list, #list-Projects-list{
     background-color: black;
     color: white;
 }
+a#list-FrontEnd-list:hover, a#list-BackEnd-list:hover, a#list-Mobile-list:hover, a#list-GitHub-list:hover, 
+a#list-JiraConfluence-list:hover, a#list-Trello-list:hover, a#list-SlackStride-list:hover,
+a#list-Internship-list:hover, a#list-Projects-list:hover{
+    font-weight: bold;
+    border-color: #00C851;
+}
+
+
 a.active{
     background-color: white;
     border-color: white;
 }
 .navBar{
-    margin-top: 4%;
+    margin-top: 2%;
 }
 li{
     margin-top: 1%;
 }
 ul{
-    list-style-type: none;
+    /*list-style-type: none;*/
     padding: 0;
     margin: 0;
 }
@@ -54,11 +69,20 @@ ul{
     font-size: 1.2em
 }
 
+a.title_link{
+    color: white;
+}
+
+a.title_link:hover{
+    color: #0a24ff;
+    text-decoration: none;
+}
+
 
 /* **************** */
 /* FOOTER */
 /* **************** */
-footer{
+.mainFooter{
     margin-top: 10%;
     background-color: #222222;
 }
