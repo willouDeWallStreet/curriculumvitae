@@ -69,11 +69,11 @@ ul{
     font-size: 1.2em
 }
 
-a#BULATS_link{
+a.title_link{
     color: white;
 }
 
-a#BULATS_link:hover{
+a.title_link:hover{
     color: #0a24ff;
     text-decoration: none;
 }
